@@ -7,7 +7,7 @@ extern crate newtype_derive;
 
 custom_derive! {
     #[derive(Debug, PartialEq, Clone, PartialOrd, Copy, Default, NewtypeFrom, NewtypeAdd, NewtypeSub, NewtypeMul, NewtypeDiv)]
-    pub struct TimeSecs(f32);
+    pub struct TimeSecs(pub f32);
 }
 
 impl TimeSecs {
